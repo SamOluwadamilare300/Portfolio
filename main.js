@@ -5,8 +5,9 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
+    navbar.classList.toggle('active')
 }
+
 
 // Scroll Section Active Link
 
@@ -15,7 +16,7 @@ let navlinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
-        let top = window.scrollY; // Corrected window.scroll to window.scrollY
+        let top = window.scrollY; 
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
@@ -30,7 +31,7 @@ window.onscroll = () => {
 
     // Sticky Navbar
     let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100); // Corrected window.scroll to window.scrollY
+    header.classList.toggle('sticky', window.scrollY > 100); 
 
     // Remove toggle icon and navbar when a section is clicked
     menuIcon.classList.remove('fa-xmark');
@@ -51,9 +52,11 @@ window.onscroll = () => {
                                  
                         //   Typed Js//
                         const typed = new Typed('.multiply-text', {
-                            strings: ["Book Publisher", "Web Developer", "Blockchain Developer", "Music Publisher"],
+                            strings: ["Book Publisher", "Software Developer", "Blockchain Developer", "Music Producer"],
                             typeSpeed: 70,
                             backSpeed: 70,
                             loop: true
                         });
+
+                        
                         
