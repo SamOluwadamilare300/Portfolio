@@ -52,7 +52,7 @@ window.onscroll = () => {
                                  
                         //   Typed Js//
                         const typed = new Typed('.multiply-text', {
-                            strings: ["Book Publisher", "Software Developer", "Blockchain Developer", "Music Producer"],
+                            strings: ["Book Publisher", "Software Developer", "Blockchain Developer"],
                             typeSpeed: 70,
                             backSpeed: 70,
                             loop: true
